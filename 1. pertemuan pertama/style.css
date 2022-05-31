@@ -1,0 +1,80 @@
+.container {
+    width: 600px;
+    border: 5px solid #333;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+
+    /* Properti pada container */
+    /* cara membuat elemen menjadi flexbox yaiatu wajib dikasi display = flex pada css nya */
+
+    /*flex-direction = mengatur elemen mau dikiri, dikanan atau kebawah */
+    /*    -----------value-------------
+        row             = elemen dimulai sebelah kiri
+        row-reverse     = elemen aimulai disebelah kanan
+        column          = elemen dimulai dari atas
+        column-reverse  = elemen dimlai dari dari bawah
+    */
+
+    /* flex-wrap = mengatur supaya elemen tidak memaksakan untuk jadi satu baris */
+    /*    --------value---------
+        nowrap          = conten tidak akan selalu satu bari walau elemnya sudah banyak
+        wrap            = conten akan dikebawahkan dan akan selalu mengikuti sesuai ukuran
+        wrap-reverse    = conten akan dikebawahkan dan akan dimulai dari terakhir
+     */
+
+    /* Justify-conten = berfungsi untuk mengatur rata dari elemen yang ada didalamnya  */
+    /*   -------value------------
+        flex-start              = membuat elemen menjadi rata kiri
+        flex-end                = mengatur elemen menjadi rata kanan
+        center                  = mengatur elemen menjadi di tengah-tengah
+        space-between           = mengatur elemen menjadi ada dikiri dan kanan
+        space-around            = mengatur jarak elemen kiri kanan menjadi sama
+        space-evenly            = mengatur jarak antar elemen menjadi sama antara kiri dan kanan
+     */
+
+    /* Align-item = mengatur prilaku penjajaran items pada elemn yang vertikal */
+    /*     --------value--------
+        flex-start              = membuat elemen menjadi rata kiri
+        flex-end                = mengatur elemen menjadi rata kanan
+        center                  = mengatur elemen menjadi di tengah-tengah
+        stretch                 = mengatur elemen supaya sama dengan tingginya
+        baseline                = mengsejajarakan item tergantug pada childnya
+     */
+
+    /* align-conten = prilakunya sama seperti align-item tetapi conten nya harus banyak */
+    /*     --------value--------
+        flex-start              = membuat elemen menjadi rata kiri
+        flex-end                = mengatur elemen menjadi rata kanan
+        center                  = mengatur elemen menjadi di tengah-tengah
+        stretch                 = mengatur elemen supaya sama dengan tingginya
+        space-between           = 
+        space-around            = 
+     */
+
+
+}
+
+.container div {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(63, 63, 231);
+    margin: 2px;
+}
+
+/* Properti pada item */
+/* 
+    order       = mengatur urutan conten
+    contoh .item { order: 1; }
+
+    flex-grow
+    contoh .item { flex: 2; }
+
+    align-self
+    ----value----
+    flex-start
+    flex-end
+    stretch
+
+*/
